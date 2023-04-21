@@ -10,7 +10,6 @@ public class ApiTests {
 
     @Test
     public void getSingleUser() {
-
         given()
                 .contentType(ContentType.JSON)
                 .when()
@@ -28,7 +27,6 @@ public class ApiTests {
 
     @Test
     public void createUser() {
-
         given()
                 .contentType(ContentType.JSON)
                 .body("{\"name\": \"Donatello\", \"job\": \"peace maker\"}")
@@ -42,7 +40,6 @@ public class ApiTests {
 
     @Test
     public void updateUserData() {
-
         given()
                 .contentType(ContentType.JSON)
                 .body("{\"name\": \"Donald\", \"job\": \"teacher\"}")
@@ -56,7 +53,6 @@ public class ApiTests {
 
     @Test
     public void dropUserData() {
-
         given()
                 .contentType(ContentType.JSON)
                 .body("{\"name\": \"Donald\", \"job\": \"teacher\"}")
@@ -68,7 +64,6 @@ public class ApiTests {
 
     @Test
     public void userRegistration() {
-
         given()
                 .contentType(ContentType.JSON)
                 .body("{\"email\": \"rachel.howell@reqres.in\", \"password\": \"lineage\"}")
@@ -82,7 +77,6 @@ public class ApiTests {
 
     @Test
     public void userAuth() {
-
         given()
                 .contentType(ContentType.JSON)
                 .body("{\"email\": \"rachel.howell@reqres.in\", \"password\": \"lineage\"}")
